@@ -1,5 +1,5 @@
 # Datasets
-Here are the datasets tested in the paper "Continuous and Orientation-preserving Correspondence via Functinal Maps" by Jing Ren, Adrien Poulenard, Peter Wonka and Maks Ovsjanikov.
+Here are the datasets tested in the paper "Continuous and Orientation-preserving Correspondence via Functional Maps" by Jing Ren, Adrien Poulenard, Peter Wonka and Maks Ovsjanikov.
 
 Original Datasets can be found at:
 - FAUST: http://faust.is.tue.mpg.de/
@@ -20,13 +20,13 @@ For each of the dataset (FAUST/TOSCA_Isometric/TOSCA_nonIsometric)
     - **WKSini_symm/**: using WKS descriptors with out orientation-reversing term
     - **WKSini_direct_BCICP/**: WKSini_direct + BCICP
     - **WKSini_symm_BCICP/**: WKSini_symm + BCICP
-    - **SEGini_direct_BCICP/**: using segmentations to compute the descriptors, then add the orientation-preserving operator to compute the initial functional map. Then add BCICP refinement. 
+    - **SEGini_direct_BCICP/**: using segmentations to compute the descriptors, then add the orientation-preserving operator to compute the initial functional map. Then add BCICP refinement.
   
 
 Comments
 ---------
-- The script `run_example.m` shows how to load the **ground-truth correspondences**, pre-computed **segmentation**, and saved **maps**. It is also included that how we measured the pre-vectex accuracy of the maps. 
-- Our baselines are (1) BIM, (2) WKSini + ICP and (3) PMF. (2) is not included here, but the maps can be easilty computed by applying 10 iterations of ICP to "WKSini_direct" and "WKSini_symm".
+- The script `run_example.m` shows how to load the **ground-truth correspondences**, pre-computed **segmentation**, and saved **maps**. It is also included that how we measured the pre-vertex accuracy of the maps. 
+- Our baselines are (1) BIM, (2) WKSini + ICP and (3) PMF. (2) is not included here, but the maps can be easily computed by applying 10 iterations of ICP to "WKSini_direct" and "WKSini_symm".
 - Measuring these maps on **all** the given correspondence should give the curves shown in the paper. 
 - The released code is optimized a bit, and it will give better maps than the ones stored here.
 - Please do not forget to cite the paper [LRVD algorithm](https://ieeexplore.ieee.org/document/6832586/?arnumber=6832586) if you use the dataset in your work. Thanks (〃ﾉωﾉ)
