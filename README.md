@@ -11,7 +11,7 @@ For each of the dataset (FAUST/TOSCA_Isometric/TOSCA_nonIsometric)
 - **test_pairs.txt**: each row shows a pair of shape names in this collection that we tested
 - **vtx_5k/**: 
   - **xxx.off**: the remeshed shapes in this collection
-  - **corres/**: for any pair (A.off, B.off) in this collection, "A.vts" stores the given **ground-truth** *direct* correspondence to "B.vtx", and "A.sym.vts" stros the **ground-truth** *symmetric* correspondence to "B.vtx"
+  - **corres/**: for any pair (A.off, B.off) in this collection, "A.vts" stores the given **ground-truth** *direct* correspondence to "B.vtx", and "A.sym.vts" stores the **ground-truth** *symmetric* correspondence to "B.vtx"
   - **segmentation/**: for a pair (A.off, B.off), the segmentation of the two shapes are stored as "A_B.A.seg.sym" and "A_B.B.seg.sym". Moreover, "A_B.B.seg.nonsym" and "A_B.B.seg.nonsym" give the segmentation after breaking the symmetry. Please refer to [Robust Structure-based Shape Correspondence](https://github.com/hexygen/structure-aware-correspondence) for the details of the segmentation
   - **maps/**: stores the maps we computed and measured for the curves shown in the paper (with format "A_B.map", and the pairs are listed in the "test_pairs.txt")
     - **BIM/**:  [Blended Intrinsic Maps](http://www.vovakim.com/projects/CorrsBlended/) (note that the maps are **0-based**)
